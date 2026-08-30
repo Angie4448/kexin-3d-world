@@ -6,6 +6,8 @@
 
 本仓库给**高中科创老师**用。不需要会写代码：把填好的表和提示词贴到豆包、DeepSeek 或工作搭子即可。
 
+仓库短名 `web3d-ile` = **Web-based 3D Interactive Learning Environment**（基于网页的三维交互学习环境）。
+
 ---
 
 ## 仓库里有什么
@@ -21,7 +23,7 @@
 
 ## 先玩示例（约 15–25 分钟）
 
-- 在线打开：<https://angie4448.github.io/kexin-3d-world/example/>
+- 在线打开：<https://angie4448.github.io/web3d-ile/example/>
 - 或下载 [`example/index.html`](example/index.html)（点进去后点 `Download raw file`），用 **Chrome / Edge** 打开。这是单文件，引擎已内嵌，**不需要联网**。
 
 操作：
