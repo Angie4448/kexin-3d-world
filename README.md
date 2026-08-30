@@ -21,9 +21,10 @@
 
 ## 先玩示例（约 15–25 分钟）
 
-1. 下载 [`example/index.html`](example/index.html)（点进去后点 `Download raw file`，或克隆本仓库）。
-2. 用 **Chrome / Edge** 打开。这是单文件，引擎已内嵌，**不需要联网**。
-3. 操作：
+- 在线打开：<https://angie4448.github.io/kexin-3d-world/example/>
+- 或下载 [`example/index.html`](example/index.html)（点进去后点 `Download raw file`），用 **Chrome / Edge** 打开。这是单文件，引擎已内嵌，**不需要联网**。
+
+操作：
 
 | 键 | 作用 |
 |----|------|
