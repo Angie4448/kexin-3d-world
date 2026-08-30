@@ -102,7 +102,7 @@ What the teacher collects is this written record, not the number of reels.
 
 ---
 
-## Contributors / 贡献者
+## Contributors
 
 - Jerry Deng
 - Eden Zhang
