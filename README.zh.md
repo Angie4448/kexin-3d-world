@@ -104,6 +104,7 @@
 
 ## 贡献者
 
+- Angie Tang
 - Jerry Deng
 - Eden Zhang
 

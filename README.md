@@ -104,6 +104,7 @@ What the teacher collects is this written record, not the number of reels.
 
 ## Contributors
 
+- Angie Tang
 - Jerry Deng
 - Eden Zhang
 
