@@ -1,113 +1,114 @@
-# 科创选题 · 第一人称 3D 世界
+# web3d-ILE
 
-学生已经读过材料，题目还定不下来时，不要再塞一篇新文章。
+English | [中文](README.zh.md)
 
-让学生走进一个能在浏览器里打开的第一人称 3D 世界：**把刚读过的知识再走一遍**，自己当导演收胶卷。玩完后写几段观察，再对照原来的阅读材料。
+When students have already read the materials but still cannot settle on a project topic, do not hand them another article.
 
-本仓库给**高中科创老师**用。不需要会写代码：把填好的表和提示词贴到豆包、DeepSeek 或工作搭子即可。
+Let them walk through a first-person 3D world in the browser: **re-experience what they have just read**, collect film reels as the director, then write a few observations and check them against the original readings.
 
-仓库短名 `web3d-ile` = **Web-based 3D Interactive Learning Environment**（基于网页的三维交互学习环境）。
+This repository is for **high-school STEM inquiry teachers**. No coding or code editor is required: fill in the form, paste the prompt into Doubao, DeepSeek, or WorkBuddy, and generate a world for that student.
 
----
-
-## 仓库里有什么
-
-| 路径 | 作用 |
-|------|------|
-| [`example/index.html`](example/index.html) | 一份可直接双击打开的完整示例（六个科学方向 + 终章） |
-| [`prompts/00-填写这份表.md`](prompts/00-填写这份表.md) | 老师填：化名、年级、设备、已读摘要、兴趣、参与者/旁观者 |
-| [`prompts/01-发给通用AI.txt`](prompts/01-发给通用AI.txt) | 贴到豆包 / DeepSeek，生成可下载的 `.html` |
-| [`prompts/02-发给工作搭子.txt`](prompts/02-发给工作搭子.txt) | 贴到工作搭子，生成可发给学生的云端链接 |
+`web3d-ILE` = **Web-based 3D Interactive Learning Environment**.
 
 ---
 
-## 先玩示例（约 15–25 分钟）
+## What’s in the repo
 
-- 在线打开：<https://angie4448.github.io/web3d-ile/example/>
-- 或下载 [`example/index.html`](example/index.html)（点进去后点 `Download raw file`），用 **Chrome / Edge** 打开。这是单文件，引擎已内嵌，**不需要联网**。
-
-操作：
-
-| 键 | 作用 |
-|----|------|
-| 点击画面 | 进入第一人称 |
-| `W A S D` | 走 |
-| 鼠标 | 环顾 |
-| `E` | 互动 / 进世界 / 收胶卷 |
-| `R` | 回剪辑室 |
-| `Esc` | 释放鼠标 |
-
-示例主题是「纳米表面改性」。六个可玩方向全部保留：
-
-1. HZSM-5 沸石微孔
-2. 铜纳米锻造车间（光催化）
-3. 3µm 晶圆厂（光刻）
-4. 千米深井 · 煤液化 + XGBoost
-5. 龙窑 · SiC 发动机（EBC 涂层，1700°C）
-6. 低地球轨道 400 km（抗原子氧 PI）
-
-集齐六枚胶卷后，终章「纳米表面改性」解锁。胶卷是导演留下的个人记录，**没有排行榜、没有分数比较**。
-
-> 示例里的对话角色已改成「学生 / 导师 / 导演」，不含真实姓名。
+| Path | What it is |
+|------|------------|
+| [`example/index.html`](example/index.html) | A complete, double-clickable example (six science directions + finale) |
+| [`prompts/00-填写这份表.md`](prompts/00-填写这份表.md) | Teacher form: pseudonym, grade, device, reading summary, interests, participant / observer |
+| [`prompts/01-发给通用AI.txt`](prompts/01-发给通用AI.txt) | Paste into Doubao / DeepSeek to get a downloadable `.html` file |
+| [`prompts/02-发给工作搭子.txt`](prompts/02-发给工作搭子.txt) | Paste into WorkBuddy to get a shareable cloud link |
 
 ---
 
-## 给学生另做一份（不会写代码）
+## Try the example first (about 15–25 minutes)
 
-### 第 1 步：填表
+- Play online: <https://angie4448.github.io/web3d-ILE/example/>
+- Or download [`example/index.html`](example/index.html) (`Download raw file`) and open it in **Chrome / Edge**. The engine is inlined; **no network is required**.
 
-打开 [`prompts/00-填写这份表.md`](prompts/00-填写这份表.md)，按学生的情况填。
+Controls:
 
-**不要**把学生真名、学校名、成绩表、聊天记录、原始笔记全文贴进表里。化名只用于片尾署名和胶卷记录。
+| Key | Action |
+|-----|--------|
+| Click the view | Enter first person |
+| `W A S D` | Walk |
+| Mouse | Look around |
+| `E` | Interact / enter a world / collect a reel |
+| `R` | Return to the editing room |
+| `Esc` | Release the mouse |
 
-### 第 2 步：选一条路
+The example theme is nano-scale surface modification. All six playable directions are kept:
 
-**路线 A：要一个能保存的网页文件**
+1. HZSM-5 zeolite micropores
+2. Copper nano-forge (photocatalysis)
+3. 3 µm wafer fab (lithography)
+4. Deep mine · coal liquefaction + XGBoost
+5. Dragon kiln · SiC engine (EBC coating, 1700°C)
+6. LEO 400 km (AO-resistant PI)
 
-1. 打开豆包或 DeepSeek 网页版。
-2. 先粘贴填好的表，再粘贴 [`prompts/01-发给通用AI.txt`](prompts/01-发给通用AI.txt) 全文。
-3. 把生成的代码保存为 `某某的3D世界.html`。
-4. 用 Chrome 打开，自己先走一遍，再发给学生。
+Collect all six reels to unlock the finale, “Nano-scale surface modification.” Reels are the director’s personal record: **no leaderboard, no score comparison**.
 
-**路线 B：要一个云端链接**
-
-1. 打开工作搭子。
-2. 先粘贴填好的表，再粘贴 [`prompts/02-发给工作搭子.txt`](prompts/02-发给工作搭子.txt) 全文。
-3. 拿到可预览 / 可分享的链接，发给学生。
-
-电脑和平板都要能玩：提示词里已经要求——电脑用键盘鼠标，平板用屏幕虚拟摇杆；也可以一份页面里两种都做，按设备自动切换。
-
-### 第 3 步：玩完必须写
-
-3D 世界不能替代阅读。学生从网站出来后，用纸或文档写：
-
-- 我在哪个世界里做了什么
-- 这和我读过的哪一段对得上 / 对不上
-- 如果只能留一个课题，我现在会选什么，为什么
-
-老师收的是这份书面记录，不是胶卷数量。
+> Names in this example are pseudonyms.
 
 ---
 
-## 请守住的几条
+## Make a world for your student (no coding)
 
-1. **先阅读，再进 3D。** 网站用来二次消化，不是用来讲新课。
-2. **方向来自学生已经感兴趣、已经读过的材料**，不要由老师另出一套驱动问题再做成关卡。
-3. **第一人称。** 学生是分子、粒子、材料或现场参与者；若表里选了旁观者，就改为跟随镜头观察，不要做成上帝视角策略游戏。
-4. **胶卷 = 导演的个人素材。** 不要排名、不要积分榜、不要「谁收得快」。
-5. **化名。** 页面、链接、文件名里都不要出现学生真名。
-6. **一份页面尽量同时照顾电脑和平板。**
+### Step 1. Fill in the form
+
+Open [`prompts/00-填写这份表.md`](prompts/00-填写这份表.md) and fill it in for that student.
+
+Do not put a real name, school name, gradebook, chat log, or the student’s raw notes into the form. The pseudonym is only for the end credits and reel record.
+
+### Step 2. Pick one path
+
+**Path A: a file the student can save**
+
+1. Open Doubao or DeepSeek in the browser.
+2. Paste the completed form, then paste all of [`prompts/01-发给通用AI.txt`](prompts/01-发给通用AI.txt).
+3. Save the generated code as `Name-3D-world.html` (use the pseudonym).
+4. Open it in Chrome, walk through it yourself, then send it to the student.
+
+**Path B: a cloud link**
+
+1. Open WorkBuddy.
+2. Paste the completed form, then paste all of [`prompts/02-发给工作搭子.txt`](prompts/02-发给工作搭子.txt).
+3. Send the student the preview / share link.
+
+The prompts already ask for both PC and tablet: keyboard and mouse on a computer, on-screen joystick on a tablet. One page can include both and switch by device.
+
+### Step 3. Write after playing
+
+The 3D world does not replace reading. After leaving the site, the student writes on paper or in a document:
+
+- What I did in each world
+- Which passages of the reading it matches / does not match
+- If I could keep only one topic, which one, and why
+
+What the teacher collects is this written record, not the number of reels.
 
 ---
 
-## 隐私
+## Design rules to keep
 
-- 本示例已去掉真实姓名和培训期次等信息。
-- 公开仓库里不要上传学生笔记、对话截图、成绩或学校内部表格。
-- 把提示词发给任何网页 AI 之前，先检查粘贴内容里有没有真名。
+1. **Read first, then enter 3D.** The site is a second pass through known material, not a new lesson.
+2. **Directions come from what the student already cares about and has already read.** Do not invent a separate set of teacher driving questions and turn those into levels.
+3. **First person.** The student is a molecule, particle, material, or on-site participant. If the form says observer, follow the camera; do not make a god-view strategy game.
+4. **A reel is the director’s personal footage.** No ranking, no point board, no “who collected faster.”
+5. **Pseudonym.** Do not put a real student name on the page, in the link, or in the file name.
+6. **One page should work on both computer and tablet when possible.**
 
 ---
 
-## 许可
+## Contributors / 贡献者
 
-示例页面内嵌 [Three.js](https://threejs.org/)（MIT）。本仓库其余文件同样以 MIT 许可，见 [LICENSE](LICENSE)。欢迎直接改、直接发给同事。
+- Jerry Deng
+- Eden Zhang
+
+---
+
+## License
+
+The example page inlines [Three.js](https://threejs.org/) (MIT). The rest of this repository is also MIT; see [LICENSE](LICENSE). Please adapt it and share it with colleagues.
